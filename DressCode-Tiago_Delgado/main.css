@@ -13,7 +13,7 @@ body{
     grid-template-columns: repeat(2, 1fr);
 }
 .header{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     text-align: center;
     padding: 20px;
     grid-area: header;
@@ -21,33 +21,6 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.menu{
-    grid-area: menu;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-}
-.menu ul{
-    list-style: none;
-}
-.menu ul li{
-    display: inline-block;
-    margin: 0 40px;
-}
-.menu ul li a{
-  font-family: "Oswald", sans-serif;
-    font-size: 25px;
-    color: white;
-    text-decoration: none;
-    display: block;
-    padding: 10px;
-    display: flex;
-}
-.menu ul li a:hover{
-    background-color: black;
 }
 .main{
     grid-area: main;
@@ -153,14 +126,7 @@ body{
     margin: 15px;
     
 }
-.headerimg{
-    height: 110px;
-    width: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-}
+
 .input-search{
     border-radius: 25px;
     width: 80%;

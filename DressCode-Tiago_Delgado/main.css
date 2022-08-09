@@ -1,241 +1,66 @@
-body{
-    margin: 0;
-    padding: 0;
-}
-.grid-loyout{
-    height: 1000px;
-    display: grid;
-    grid-template-areas: " header header"
-                        " menu menu"
-                        " main main"
-                        " footer footer";
-    grid-template-rows: 20% 10% auto 10%;
-    grid-template-columns: repeat(2, 1fr);
-}
-.header{
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 20px;
-    grid-area: header;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.main{
-    grid-area: main;
-    background-color: white;
-    text-align: center;
+body {
     background-image: url(./resources/Tokyo-Wallpaper-27.jpg);
     background-repeat: space repeat center;
-}
-.main p{
-    color: black;
-    font-size: 200%;
-    font-family: "Oswald", sans-serif;
-}
-.politicadrm p{
-    font-size: 150%;
-    font-family: "Oswald", sans-serif;
-    color: black;
-    background-color: black;
-}
-.main h1{
-    color: whitesmoke;
-    font-size: 150%;
-    font-family: "Oswald", sans-serif;
-    background-color: black;
-    margin-top: -15px;
-    border-radius: 25px;
-}
-.info{
-    font-size: 150%;
-    font-family: "Oswald", sans-serif;
-    margin-left: 58%;
-    margin-top: 15px;
-    list-style: none;
-    text-align: center;
-}
-.legend{
-    font-size: 150%;
-    font-family: "Oswald", sans-serif;
-    display: flex;
-    margin: 10px;
-}
-.form-style{
-    display: flex;
-    flex-direction: column;
-}
-.input7{
-    height: 30px;
-}
-.form-style p{
-    font-size: 150%;
-    font-family: "Oswald", sans-serif;
-    color: brown;
-    display: flex;
-    margin: 10px;
-}
-.legenda-user{
-    font-size: 200%;
-    font-family: "Oswald", sans-serif;
-    color: black;
-}
-.form-style input{
-    font-size: 100%;
-    font-family: "Oswald", sans-serif;
-    color: black;
-    display: flex;
-    margin: 10px;
-}
-.logoform{
-    height: 25px;
-}
-.form-estilo{
-    background-color: gray;
-}
-.enviar:hover{
-    background-color: brown;
-}
-.img-m{
-    height: 25em;
-    width: 100%;
-    margin-top: -20px;
-}
-.footer{
-    grid-area: footer;
-    background-color: black;
-    text-align: center;
+    color: #000000;
+    font-family: "Oswald", sans-serif; }
+  
+  .botones {
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #ffffff; }
+  
+  p {
+    margin: 0px;
+    font-size: 20px; }
+  
+  ol, ul {
+    padding-left: 0px; }
+  
+  header {
+    background-color: #ffffff;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 15px 0px #000100;
+    font-family: "Bebas Neue";
+    font-size: 32px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1; }
+    header nav div {
+      display: flex;
+      justify-content: flex-end; }
+      header nav div .logo {
+        font-size: 60px;
+        font-style: italic; }
+      header nav div a {
+        margin: 20px; }
+    header h1 {
+      display: none; }
+  
+  footer {
+    background-color: #ffffff;
+    color: #f5f5f5;
+    margin-top: 60px;
     padding: 20px;
-}
-.footer h6{
-    display: flex;
-    justify-content: first baseline;
-    align-items: center;
-    color: white;
-    font-size: 100%;
-    font-family: sans-serif;
-}
-.img{
-    height: 500px;
-    width: 500px;
-}
-.img2{
-    height: 500px;
-    width: 500px;
-    margin: 15px;
-    
-}
-
-.input-search{
-    border-radius: 25px;
-    width: 80%;
-}
-.header p{
-    color: white;
-    font-family: "Oswald", sans-serif;
-    font-size: 100%;
-}
-.form-estilo-user{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-@media only screen and (max-width: 1200px) {
-    body {
-        max-width: 100vw;
-    }
-}
-@media only screen and (max-width: 1200px) {
-    .img{
-        max-width: 80vw;
-    }
-    .img2{
-        max-width: 80vw;
-    }
-    .img-m{
-        max-width: 80vw;
-    }
-    .headerimg{
-        max-width: 80vw;
-    }
-    .grid-loyout{
-        height: 800px;
-        display: grid;
-        grid-template-areas: " header header"
-        " menu menu"
-                            " main main"
-                            " footer footer";
-        grid-template-rows: 20% 30% auto 10%;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .menu ul li a{
-            font-size: 20px;
-    }
-    .info{
-        font-size: 80%;
-    }
-}
-@media only screen and (max-width: 768px) {
-    body {
-        max-width: 100vw;
-    }
-}
-@media only screen and (max-width: 768px) {
-    .img{
-        max-width: 80vw;
-    }
-    .img2{
-        max-width: 80vw;
-    }
-    .img-m{
-        max-width: 80vw;
-    }
-    .headerimg{
-        max-width: 80vw;
-    }
-    .grid-loyout{
-        height: 800px;
-        display: grid;
-        grid-template-areas: " header header"
-        " menu menu"
-        " main main"
-        " footer footer";
-        grid-template-rows: 20% 30% auto 10%;
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media only screen and (max-width: 480px) {
-    body {
-        max-width: 100vw;
-    }
-}
-@media only screen and (max-width: 480px) {
-    .img{
-        max-width: 80vw;
-    }
-    .img2{
-        max-width: 80vw;
-    }
-    .img-m{
-        max-width: 80vw;
-    }
-    .headerimg{
-        max-width: 80vw;
-    }
-    .grid-loyout{
-        height: 800px;
-        display: grid;
-        grid-template-areas: " header header"
-                            " menu menu"
-                            " main main"
-                            " footer footer";
-        grid-template-rows: 20% 30% auto 10%;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .info{
-        font-size: 50%;
-    }
-}
+    bottom: 0px;
+    font-size: 20px; }
+    footer p {
+      text-align: center; }
+    footer .footer-content {
+      padding: 15px;
+      display: flex;
+      justify-content: space-between; }
+      footer .footer-content .footer-info li {
+        list-style-type: none; }
+        footer .footer-content .footer-info li:first-of-type {
+          margin-bottom: 10px; }
+      footer .footer-content .footer-redes {
+        display: flex; }
+        footer .footer-content .footer-redes li {
+          list-style-type: none; }
+          footer .footer-content .footer-redes li:first-of-type {
+            margin-right: 20px; }
+          footer .footer-content .footer-redes li i {
+            cursor: pointer;
+            font-size: 35px; }
